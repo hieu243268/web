@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="../img/kiwi.svg">
+    <title>Portfolio của Hiếu này</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="../img/kiwi.svg" alt="" class="nav_logo" id="logo">
+            <ul class="nav_links">
+                <li class="nav_item">
+                    <!-- hrefs have to match the ids of the sections below =>
+                         by clicking these, automatically move the page to the respective section-->
+                    <a href="#section_1" class="nav_link">Hobbies</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_2" class="nav_link">Major</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_3" class="nav_link">Achievements</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#section_4" class="nav_link nav_link--btn btn_show">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header_title">
+            <h1 class="text-focus-in">
+                Welcome to</br>
+                <span class="highlight">Trần Minh Hiếu</span>
+                <br>portfolio!
+            </h1>
+            <div class="header_intro">
+
+                <h4>What do you think about me?
+            
+                </h4>
+                <h5>Tran Minh Hieu, a student studying at FPT University, majoring in software engineering.
+                    <br>Hieu is 20 years old this year, Hieu was born and raised in Hai Phong.</br>
+                    Hieu is very sociable, funny,handsome and very close to friends. 
+                </h5>
+                <button class="btn_text btn_scroll">About me &DownArrow;</button>
+            </div>
+            <img src="D:\WEB\img\182187288_513575043150094_4659455132876494885_n.jpg" class="header_img" alt="">
+            <!-- complete later -->
+        </div>
+
+    </header>
+
+    <!-- SECTION 1 -->
+    <section class="section" id="section_1">
+        <div class="section_title">
+            <h2 class="section_description"> Hiếu's  Hobbies
+                <h3 class="section_header">What do you know about Hieu, hobbies, people, or achievements?</h3>
+            </h2>
+        </div>
+
+        <div class="description">
+            <!-- Grid model. 
+                Images and content boxes swap respectively their positions -->
+
+            <!-- First element -->
+            <img src="D:\WEB\img\212545459_547950809912003_3301855265013364811_n.jpg"
+                alt="Dish" class="des_image lazy_img">
+            <div class="description_content">
+                <h5 class="des_header">Football</h5>
+                <p>Hieu loves soccer more than anything. When he was young, Hieu often hid to play football and ended up being beaten in the face by his parents.
+                 <br> And Hiếu also won many school awards.</br>
+                </p>
+            </div>
+
+            <!-- Second element -->
+            <div class="description_content">
+                <h5 class="des_header">Cooking</h5>
+                <p> Hieu also loves to cook. Whenever I have free time, Hieu makes extremely attractive dishes. 
+                    Hieu's favorite and most popular dish is Panna Cotta.</p>
+            </div>
+            <img src="D:\WEB\img\cach-lam-panna-cotta-xoai-thom-ngon-mat-lanh-202102281807117936.jpg" alt="Cooking" class="des_image lazy_img">
+
+            <!-- Third element -->
+            <img src="D:\WEB\img\0_KMwsBx_3dNv_YLz-.jpg" alt="Watching TV" class="des_image lazy_img">
+            <div class="description_content">
+                <h5 class="des_header">Watching TV</h5>
+                <p> Because TV is something that has been associated with Hieu's childhood, not a laptop or phone, so whenever he has free time, 
+                    Hieu likes to immerse himself in movies and TV programs.</p>
+            </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="section" id="section_2">
+        <div class="section_title">
+            <h2 class="section_description"> Majors to study in FPT University.
+                <h3 class="section_header">Things Hieu studied and learned.</h3>
+            </h2>
+        </div>
+        <div class="tech">
+            <div class="tech_container">
+                <button class="btn tech_tab tech_tab--1 tech_tab--active" data-tab="1">
+                    <span>01</span> C core
+                </button>
+                <button class="btn tech_tab tech_tab--2" data-tab="2">
+                    <span>02</span> Java OOP </button>
+                <button class="btn tech_tab tech_tab--3" data-tab="3">
+                    <span>03</span> Front end Web.
+                </button>
+            </div>
+
+            <div class="tech_content tech_content--1 tech_content--active">
+                
+                <p> Hieu loves programming and these are the knowledge he has learned.</p>
+            </div>
+            <div class="tech_content tech_content--2">
+                
+                <p> Hiếu like, Hiếu loves its.</p>
+            </div>
+            <div class="tech_content tech_content--3">
+                <h5 class="tech_header">But difficults</h5>
+                <p> so khó</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section" id="section_3">
+        <div class="section_title section_title--testimonials">
+            <h2 class="section_description"> Achievements</h2>
+            <h3 class="section_header">After 1 year of studying at FPT, his academic achievements are
+                                     not many but there are still other achievements for Hieu.</h3>
+        </div>
+
+        <div class="slider">
+            <!-- First person's review -->
+            <div class="slide slide--1" style="transform: translateX(-100%);">
+                <div class="testimonial">
+
+                    <h5 class="testimonial_header">Photo contest first prize</h5>
+                    <img src="D:\WEB\img\214792225_171844304999837_8341202282398081422_n.jpg" alt="Photo contest first prize" class="des_image lazy_img">
+                    <blockquote class="testimonial_text">
+                    </blockquote>
+                    <address class="testimonial_author">
+                        <img src="" alt="">
+                        <h6 class="testimonial_name">This is the first prize of filial piety at FPT University</h6>
+                        <p class="testimonial_location">FPT University</p>
+                    </address>
+                </div>
+            </div>
+            <!-- Second person's review -->
+            <div class="slide slide--1" style="transform: translateX(0%);">
+                <div class="testimonial">
+                    ::before
+                    <h5 class="testimonial_header">The second: </h5>
+                    <blockquote class="testimonial_text">The second prize is an online meme contest, 
+                        which is a funny image of yourself recently organized by the school.
+                    </blockquote>
+                    <address class="testimonial_author">
+                        <img src="D:\WEB\img\211338718_349038250085909_666356023895551237_n.jpg" alt="The second" class="des_image lazy_img">
+                        <h6 class="testimonial_name">B</h6>
+                        <p class="testimonial_location">FPT University</p>
+                    </address>
+                </div>
+            </div>
+            <!-- Third person's review -->
+            <div class="slide slide--1" style="transform: translateX(100%);">
+                <div class="testimonial">
+                    ::before
+                    <h5 class="testimonial_header">Third prize</h5>
+                    <blockquote class="testimonial_text">Also this year, it was the TIKTOK contest organized 
+                                             by the school and Hieu won the second prize in that competition.
+                    </blockquote>
+                    <address class="testimonial_author">
+                        <img src="" alt="">
+                
+                        <p class="testimonial_location">FPT University</p>
+                    </address>
+                </div>
+            </div>
+
+            <button class="slider_btn slider_btn--left">&larr;</button>
+            <button class="slider_btn slider_btn--right">&rarr;</button>
+            <!-- HTML Unocode: left & right arrow -->
+
+            <div class="dots"></div>
+        </div>
+
+    </section>
+
+    <section class="contact_prompt">
+        <div class="section_title">
+            <h3 class="section_header">If you want to collaborate or just to have a friendly conversation, how about
+                dropping me a hint?</h3>
+        </div>
+
+        <button class="btn btn_show">Contact me</button>
+
+
+    </section>
+    <footer class="footer">
+        <ul class="footer_items">
+            <li class="footer_item">
+                <a href="#" class="footer_link">About</a>
+            </li>
+            <li class="footer_item">
+                <a href="#" class="footer_link">Terms of Use</a>
+            </li>
+            <li class="footer_item">
+                <a href="#" class="footer_link">Privacy</a>
+            </li>
+            <li class="footer_item">
+                <a href="#" class="footer_link">Contact me</a>
+            </li>
+        </ul>
+
+        <img src="" alt="">
+        <p class="footer_copyright">
+            &copy; Copyright by
+            <a href="https://www.facebook.com/profile.php?id=100040520951010" class="facebook_link" target="blank">Tran Minh Hieu</a>
+             <br> My email: <span class="mail">hieu243268@gmail.com</span>
+        </p>
+    </footer>
+
+    <div class="modal hidden">
+        <button class="btn_close">&times;</button>
+        <h2 class="modal_header">You are just <br><span class="highlight">one click</span> from reaching me</h2>
+        <form class="modal_form">
+            <label for="">First Name</label>
+            <input type="text">
+            <label for="">Last Name</label>
+            <input type="text">
+            <label for="">Email Address</label>
+            <input type="email">
+            <button class="btn">Continue &rarr;</button>
+        </form>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+</body>
+
+
+</html>
