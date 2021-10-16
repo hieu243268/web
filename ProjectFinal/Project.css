@@ -31,8 +31,8 @@ body {
     z-index: 1000;
     visibility: hidden;
     animation: animateBg 10s linear infinite;
-    -webkit-transition: all 2s 1s ease-out;
-    transition: all 2s 1s ease-out;
+    -webkit-transition: all 0.5s 0.5s ease-out;
+    transition: all 0.5s 0.5s ease-out;
 }
 @keyframes animateBg{
     0%{
@@ -92,7 +92,7 @@ body {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #bb2929;
+    background: #C7B198;
     z-index: 1000;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -149,13 +149,23 @@ header ul{
 header ul li{
     list-style: none;
 }
-header ul li a{
-    display: inline-block;
+
+header .navigation li a{
     color: black;
-    font-weight: 400;
-    margin-left: 40px;
+    display: inline-block;
+    font-family: 400;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 40px;
     text-decoration: none;
+
 }
+header .navigation li a.active,
+header .navigation li a:hover{
+    background-color: khaki;
+    color: black;
+}
+
 .content{
     position: relative;
     width: 100%;
@@ -204,7 +214,14 @@ header ul li a{
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
+    transition: 0.5s;
+    background: rgba(31, 233, 31, 0.1);
+    padding: 5px;
+    border: 2px solid rgba(31, 233, 31, 0.25);
 
+}
+.thum li.active{
+    border: 2px solid rgba(31, 233, 31, 0.25);
 }
 .thumb li:hover{
     transform: translateY(-15px);
